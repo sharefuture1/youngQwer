@@ -17,6 +17,7 @@ function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronunciation
       return `${pronunciationApi}${word}&le=jap`
     case 'cn':
       return `${pronunciationApi}${word}&le=cn`
+    // todo ko
   }
 }
 
