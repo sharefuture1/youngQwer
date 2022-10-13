@@ -9,11 +9,14 @@ const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
 function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>) {
   switch (pronunciation) {
     case 'uk':
-      return `${pronunciationApi}${word}&type=1`
+      // return `${pronunciationApi}${word}&type=1`
+      return `${pronunciationApi}${word}&le=uk`
     case 'us':
-      return `${pronunciationApi}${word}&type=2`
+      return `${pronunciationApi}${word}&le=en`
     case 'jap':
       return `${pronunciationApi}${word}&le=jap`
+    case 'cn':
+      return `${pronunciationApi}${word}&le=cn`
   }
 }
 

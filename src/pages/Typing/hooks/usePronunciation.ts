@@ -16,6 +16,9 @@ const usePronunciation = (): [PronunciationType, SwitcherDispatchType] => {
       case 'jap':
         setPronunciation('jap')
         break
+      case 'cn':
+        setPronunciation('cn')
+        break
       case 'false':
         setPronunciation(false)
         break
